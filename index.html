@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Julian SEILLER, développeur web et étudiant en informatique. Découvrez mes projets, compétences et expériences professionnelles.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Partage Réseaux Sociaux) -->
+    <meta property="og:title" content="Portfolio | Julian SEILLER - Développeur & Étudiant">
+    <meta property="og:description"
+        content="Découvrez les projets (Java, Python, Web), compétences et expériences professionnelles de Julian SEILLER, développeur et étudiant en informatique passionné.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-julianseiller.vercel.app/">
+    <meta property="og:image" content="https://portfolio-julianseiller.vercel.app/assets/images/og-image.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfolio de Julian</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bigScreen">
+            <a href="#presentation">Présentation</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-right bigScreen">
+            <a class="btn-icon" href="indexEN.html" title="Switch to English">
+                <img src="assets/icons/globe.svg" alt="Globe" style="width: 28px; filter: invert(1);">
+            </a>
+            <a href="https://github.com/JulianSEILLER" target="_blank" class="btn-icon">
+                <img src="assets/icons/github-mark-white.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/julianseiller" target="_blank" class="btn-icon">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <div class="cv-container">
+                <a href="assets/files/CV_Julian_SEILLER.pdf" target="_blank" class="btn-orange">Télécharger mon CV</a>
+            </div>
+        </div>
+
+        <div class="header-left smallScreen">
+            <a href="#hello">Portfolio de Julian</a>
+        </div>
+        <nav class="smallScreen">
+            <button id="menu-toggle" class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div id="overlay-menu" class="overlay-menu">
+                <div class="overlay-content">
+                    <a href="#presentation">Présentation</a>
+                    <hr>
+                    <a href="#parcours">Parcours</a>
+                    <hr>
+                    <a href="#competences">Compétences</a>
+                    <hr>
+                    <a href="#projets">Projets</a>
+                    <hr>
+                    <a href="#contact">Contact</a>
+                    <div class="menu-grid">
+                        <a href="indexEN.html" class="btn-icon" title="Switch to English">
+                            <img src="assets/icons/globe.svg" alt="Globe" style="width: 28px; filter: invert(1);">
+                        </a>
+                        <a href="https://github.com/JulianSEILLER" target="_blank" class="btn-icon github-btn">
+                            <img src="assets/icons/github-mark-white.svg" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/julianseiller" target="_blank"
+                            class="btn-icon linkedin-btn">
+                            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <a href="assets/files/CV_Julian_SEILLER.pdf" target="_blank" class="btn-orange">Télécharger mon
+                        CV</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="page-section">
+            <div id="homeText" class="revealRwD">
+                <h1 id="hello">Bonjour !</h1>
+                <h2 class="bigScreen">> Je m'appelle Julian.</h2>
+                <h2 class="smallScreen">Je m'appelle Julian.</h2>
+            </div>
+        </div>
+
+        <section id="presentation" class="page-section">
+            <div class="sectionHeader">
+                <h2 class="revealT">Présentation</h2>
+                <hr>
+            </div>
+            <div class="sectionContent">
+                <h3 class="revealL bigScreen">> Informations générales</h3>
+                <h3 class="revealL smallScreen">Informations générales</h3>
+                <p class="revealLwD">
+                    Je m'appelle <b>Julian SEILLER</b>, je suis un développeur de <span id="age"></span> ans basé dans
+                    la région grenobloise.
+                    <br>
+                    Diplômé d'un <b>BTS SIO</b> (Services Informatiques aux Organisations) option <b>SLAM</b> au Lycée
+                    Louise Michel, je suis admis en 3e année de <b>Bachelor Concepteur Développeur Informatique</b> au
+                    <b>CESI de Grenoble</b> (rentrée en octobre 2026).
+                    Je recherche une <b>alternance d'un an</b> dans la région grenobloise, avec une <b>disponibilité
+                        immédiate</b>, afin de consolider mes compétences en développement.
+                </p>
+                <h3 class="revealL bigScreen">> Ma passion pour l'informatique</h3>
+                <h3 class="revealL smallScreen">Ma passion pour l'informatique</h3>
+                <p class="revealLwD">
+                    Initié très tôt aux rouages de l'informatique par ma sœur, professionnelle du secteur, j'ai
+                    rapidement cultivé une forte curiosité pour ce domaine.
+                    <br><br>
+                    Mon attrait pour le code s'est concrétisé à la fin du collège par la création de mes premières pages
+                    web. Ce qui n'était qu'un passe-temps s'est transformé en une véritable vocation lorsque j'ai
+                    appréhendé la logique algorithmique à travers <b>Python et Java</b>.
+                    <br><br>
+                    C'est cette volonté constante de créer et de résoudre des problèmes complexes qui me pousse
+                    aujourd'hui à faire du développement mon futur métier.
+                </p>
+                <h3 class="revealL bigScreen">> Centres d'intérêts</h3>
+                <h3 class="revealL smallScreen">Centres d'intérêts</h3>
+                <ul class="revealLwD noMarginBottom">
+                    <li class="revealLwD">🎵 - Musique (Piano classique et musiques de film)</li>
+                    <li class="revealLwD">📷 - Photographie</li>
+                    <li class="revealLwD">✈️ - Voyages (Culture Asiatique : Japon, Bali, Thaïlande)</li>
+                    <li class="revealLwD">👾 - Jeux-Vidéo (Compétition)</li>
+                    <li class="revealLwD">💻 - Technologies</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="parcours" class="page-section">
+            <div class="sectionHeader">
+                <h2 class="revealT">Parcours</h2>
+                <hr>
+            </div>
+            <div class="sectionContent">
+                <h3 class="revealL bigScreen">> Formations</h3>
+                <h3 class="revealL smallScreen">Formations</h3>
+                <div class="formationGrid">
+                    <div class="iconOnLeft revealB">
+                        <img src="assets/icons/graduationcap.png" alt="Graduation Cap Icon">
+                        <div class="text">
+                            <h4>Bachelor Informatique (3e année)</h4>
+                            <p>CESI - Grenoble</p>
+                            <p class="date">2026 - 2027 (Admis)</p>
+                        </div>
+                    </div>
+                    <div class="iconOnLeft revealB">
+                        <img src="assets/icons/graduationcap.png" alt="Graduation Cap Icon">
+                        <div class="text">
+                            <h4>BTS SIO (SLAM)</h4>
+                            <p>Lycée Louise Michel - Grenoble</p>
+                            <p class="date">2024 - 2026</p>
+                        </div>
+                    </div>
+                    <div class="iconOnLeft revealB">
+                        <img src="assets/icons/graduationcap.png" alt="Graduation Cap Icon">
+                        <div class="text">
+                            <h4>BUT1 Informatique</h4>
+                            <p>Université Grenoble Alpes</p>
+                            <p class="date">2023 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="iconOnLeft revealB">
+                        <img src="assets/icons/school.png" alt="School Icon">
+                        <div class="text">
+                            <h4>Bac STI2D (SIN)</h4>
+                            <p>Lycée Portes de l'Oisans - Vizille</p>
+                            <p class="date">2020 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="revealL bigScreen">> Expériences Professionnelles</h3>
+                <h3 class="revealL smallScreen">Expériences Professionnelles</h3>
+                <p class="revealLwD">Survolez les cartes pour plus d'informations.</p>
+                <div class="experienceList">
+                    <div class="exp-card revealB">
+                        <div class="exp-content">
+                            <img src="assets/icons/cellcosmet.svg" alt="Cellcosmet Logo" class="exp-logo">
+                            <div class="exp-text">
+                                <div class="exp-header">
+                                    <h4>Assistant Customer Care</h4>
+                                    <span class="exp-date">08/2026</span>
+                                </div>
+                                <p class="exp-company">Cellcosmet</p>
+                                <p class="exp-desc">Intégration au sein du département Customer Care, axée sur l'analyse
+                                    du parcours client et des processus de traitement des commandes.</p>
+                            </div>
+                        </div>
+                        <div class="exp-overlay">
+                            <h4>Assistant Customer Care - Cellcosmet</h4>
+                            <span class="exp-date">Août 2026</span>
+                            <ul>
+                                <li>Analyse des outils de gestion (Shopify, Odoo CRM et Abacus ERP) utilisés pour
+                                    piloter la relation client et les ventes.</li>
+                                <li>Étude du cycle de vie complet d'une commande (création, confirmation, picking,
+                                    préparation et expédition) et de ses interactions avec le SI.</li>
+                                <li>Initiation au suivi des leads et à la centralisation des informations commerciales
+                                    au sein du CRM Odoo.</li>
+                                <li>Familiarisation avec les processus d'expédition et la génération d'étiquettes via
+                                    Shopify, FedEx et DHL.</li>
+                                <li>Observation des synergies et des flux d'informations entre le Customer Care, la
+                                    gestion commerciale et la logistique.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-card revealB">
+                        <div class="exp-content">
+                            <img src="assets/icons/timc.png" alt="TIMC Logo" class="exp-logo">
+                            <div class="exp-text">
+                                <div class="exp-header">
+                                    <h4>Stage Développeur Java | Architecture & Données</h4>
+                                    <span class="exp-date">03/2026 - 04/2026</span>
+                                </div>
+                                <p class="exp-company">Laboratoire TIMC (CNRS/UGA)</p>
+                                <p class="exp-desc">Développement de "CardiacTS", une application métier dédiée aux
+                                    chercheurs en imagerie cardiaque, conforme au Plan de Gestion des Données de la
+                                    recherche publique.</p>
+                            </div>
+                        </div>
+                        <div class="exp-overlay">
+                            <h4>Stage Laboratoire TIMC</h4>
+                            <span class="exp-date">Mars 2026 - Avril 2026</span>
+                            <ul>
+                                <li>Conception et développement d'une application de bureau moderne en JavaFX (Java 21)
+                                    dédiée à la gestion sécurisée des dossiers médicaux.</li>
+                                <li>Implémentation d'une architecture robuste (patterns MVC et Repository) et d'un
+                                    système personnalisé d'injection de dépendances.</li>
+                                <li>Intégration de la solution cloud MinIO (S3) pour le stockage et la visualisation
+                                    fluide de fichiers d'imagerie volumineux (TIFF, JPEG, PNG).</li>
+                                <li>Mise en place d'une authentification sécurisée (jBCrypt) et d'un service d'audit
+                                    garantissant la traçabilité des actions cliniques.</li>
+                                <li>Configuration de l'environnement de développement local via Docker et interfaçage
+                                    avec une base de données PostgreSQL.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-card revealB">
+                        <div class="exp-content">
+                            <img src="assets/icons/cellcosmet.svg" alt="Cellcosmet Logo" class="exp-logo">
+                            <div class="exp-text">
+                                <div class="exp-header">
+                                    <h4>Assistant QSE | Qualité, Sécurité, Environnement</h4>
+                                    <span class="exp-date">08/2025</span>
+                                </div>
+                                <p class="exp-company">Cellcosmet</p>
+                                <p class="exp-desc">Contrôle et conformité des produits au sein du département QSE d'un
+                                    laboratoire cosmétique suisse.</p>
+                            </div>
+                        </div>
+                        <div class="exp-overlay">
+                            <h4>Assistant QSE - Cellcosmet</h4>
+                            <span class="exp-date">Août 2025</span>
+                            <ul>
+                                <li>Supervision des flux entrants et des mouvements de stock, en garantissant la
+                                    conformité aux standards cosmétiques.</li>
+                                <li>Réalisation de tests qualité : mesure du pH, analyse de la viscosité à l'aide
+                                    d'appareils spécialisés, et préparation d'échantillons pour analyses externes.</li>
+                                <li>Mise en œuvre de compétences analytiques dans le respect strict des protocoles
+                                    d'hygiène et de sécurité (normes ISO/BPF).</li>
+                                <li>Contribution à la gestion documentaire et à l'archivage de dossiers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-card revealB">
+                        <div class="exp-content">
+                            <img src="assets/icons/meylan.png" alt="Meylan Logo" class="exp-logo">
+                            <div class="exp-text">
+                                <div class="exp-header">
+                                    <h4>Stage Développeur | Outils & Automatisation</h4>
+                                    <span class="exp-date">06/2025 - 07/2025</span>
+                                </div>
+                                <p class="exp-company">Mairie de Meylan</p>
+                                <p class="exp-desc">Maintenance et évolution d'ADA, un logiciel interne stratégique
+                                    automatisant la gestion des utilisateurs du SI (~550 agents).</p>
+                            </div>
+                        </div>
+                        <div class="exp-overlay">
+                            <h4>Stage Mairie de Meylan</h4>
+                            <span class="exp-date">Juin 2025 - Juillet 2025</span>
+                            <ul>
+                                <li>Création et suppression de comptes dans Active Directory.</li>
+                                <li>Attribution automatique de licences Office 365 et configuration de la messagerie
+                                    Microsoft Exchange.</li>
+                                <li>Génération automatisée de comptes Intranet et envoi d'e-mails de reporting aux
+                                    administrateurs.</li>
+                                <li>Identification et correction de dysfonctionnements, développement de nouvelles
+                                    fonctionnalités pour optimiser la fiabilité et la rapidité du processus.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-card revealB">
+                        <div class="exp-content">
+                            <img src="assets/icons/ae.png" alt="Auto-Entrepreneur Logo" class="exp-logo">
+                            <div class="exp-text">
+                                <div class="exp-header">
+                                    <h4>Auto-Entrepreneur | E-commerce & Outils de gestion</h4>
+                                    <span class="exp-date">01/2024 - 12/2024</span>
+                                </div>
+                                <p class="exp-company">Indépendant</p>
+                                <p class="exp-desc">Lancement et gestion en totale autonomie d'une activité d'e-commerce
+                                    spécialisée dans l'économie circulaire.</p>
+                            </div>
+                        </div>
+                        <div class="exp-overlay">
+                            <h4>Auto-Entrepreneur</h4>
+                            <span class="exp-date">Janvier 2024 - Décembre 2024</span>
+                            <ul>
+                                <li>Conception d'un système numérique sur mesure (Google Sheet avancé) pour centraliser
+                                    la gestion des stocks et de la trésorerie.</li>
+                                <li>Pilotage et suivi rigoureux d'un inventaire dynamique de plus de 1 000 articles.
+                                </li>
+                                <li>Génération de rapports de performance détaillés pour optimiser les stratégies de
+                                    vente.</li>
+                                <li>Gestion quotidienne de la relation client et des expéditions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="page-section">
+            <div class="sectionHeader">
+                <h2>Compétences</h2>
+                <hr>
+            </div>
+            <div class="sectionContent">
+                <h3 class="revealL bigScreen">> Mes compétences générales</h3>
+                <h3 class="revealL smallScreen">Mes compétences générales</h3>
+                <p class="revealLwD">
+                    Qu'elles soient techniques ou transverses, mes aptitudes me permettent d'aborder les défis avec
+                    méthode et créativité.
+                    <br>
+                    Ce socle de connaissances, je l'ai bâti au travers de mon cursus académique, mais surtout grâce à
+                    mon investissement personnel et mon goût prononcé pour l'auto-formation.
+                </p>
+                <ul>
+                    <li class="revealLwD">💂 - Anglais courant (B2-C1)</li>
+                    <li class="revealLwD">📝 - Conception orientée objet</li>
+                    <li class="revealLwD">🔄 - Méthode Agile (Scrum)</li>
+                    <li class="revealLwD">📊 - Gestion de projet</li>
+                    <li class="revealLwD">🔧 - Mettre en place des systèmes informatiques (Debian, Windows)</li>
+                    <li class="revealLwD">🌐 - Principes de base des réseaux</li>
+                    <li class="revealLwD">🖼️ - Réaliser des interfaces utilisateur</li>
+                    <li class="revealLwD">👤 - Analyser des besoins utilisateurs</li>
+                    <li class="revealLwD">🔗 - Conception d'API REST</li>
+                    <li class="revealLwD">☁️ - Principes DevOps et Conteneurisation (Docker)</li>
+                    <li class="revealLwD">🧪 - Tests logiciels et Assurance Qualité (QA)</li>
+                    <li class="revealLwD">🤝 - Gestion de versions et collaboration (Git/GitHub)</li>
+                    <li class="revealLwD">⚙️ - Administrer et manipuler des bases de données</li>
+                </ul>
+                <h3 class="revealL bigScreen">> Mes compétences informatiques</h3>
+                <h3 class="revealL smallScreen">Mes compétences informatiques</h3>
+                <div class="splitted">
+                    <div class="splittedLeft">
+                        <p class="revealLwD noMarginBottom">Je maitrise les <b>langages de programmation</b> et
+                            <b>outils</b> suivants :
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="skillCardsContainer">
+                    <!-- Cartes de compétences générées dynamiquement -->
+                </div>
+                <h3 class="revealL noMarginBottom bigScreen">> Mes compétences transversales</h3>
+                <h3 class="revealL noMarginBottom smallScreen">Mes compétences transversales</h3>
+                <ul class="noMarginBottom">
+                    <li class="revealLwD">🧠 - Curiosité technique</li>
+                    <li class="revealLwD">📅 - Organisation et Rigueur</li>
+                    <li class="revealLwD">🧩 - Adaptabilité et Autonomie</li>
+                    <li class="revealLwD">🤝 - Travail en équipe</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projets" class="page-section">
+            <div class="sectionHeader">
+                <h2>Projets & Réalisations</h2>
+                <hr>
+            </div>
+            <div class="sectionContent">
+                <h3 class="revealL bigScreen">> Projets Principaux</h3>
+                <h3 class="revealL smallScreen">Projets Principaux</h3>
+                <p class="revealL">Voici mes projets personnels les plus importants, cliquez pour en savoir plus.</p>
+                <div id="project-cards-main" class="project-grid revealB">
+                    <!-- Projets Principaux générés dynamiquement -->
+                </div>
+
+                <h3 class="revealL bigScreen" style="margin-top: 40px;">> Projets BTS SIO</h3>
+                <h3 class="revealL smallScreen">Projets BTS SIO</h3>
+                <p class="revealL">Voici mes projets de BTS, cliquez pour en savoir plus.</p>
+                <div id="project-cards-bts" class="project-grid revealB">
+                    <!-- Projets BTS générés dynamiquement -->
+                </div>
+
+                <h3 class="revealL bigScreen" style="margin-top: 40px;">&#62; Projets de Stages</h3>
+                <h3 class="revealL smallScreen">Projets de Stages</h3>
+                <p class="revealL">Voici les projets réalisés durant mes stages, cliquez pour en savoir plus.</p>
+                <div id="project-cards-stage" class="project-grid revealB">
+                    <!-- Projets de stages générés dynamiquement -->
+                </div>
+                <h3 class="revealL bigScreen" style="margin-top: 40px;">> Projets BUT1 Informatique</h3>
+                <h3 class="revealL smallScreen" style="margin-top: 40px;">Projets BUT1 Informatique</h3>
+                <p class="revealL">Voici mes projets de BUT, cliquez pour en savoir plus.</p>
+                <div id="project-cards-but" class="project-grid revealB">
+                    <!-- Projets BTS générés dynamiquement -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="sectionHeader">
+                <h2>Contact</h2>
+                <hr>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3 class="revealL bigScreen">> Envie de me contacter ?</h3>
+                    <h3 class="revealL smallScreen">Envie de me contacter ?</h3>
+                    <p class="revealL">Une question ? Un conseil ? Remplissez ce formulaire et envoyez-moi un message !
+                    </p>
+                    <form id="contact-form" class="revealBwD">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">Objet :</label>
+                        <input type="text" id="subject" name="subject" required>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit" class="btn-orange">Envoyer</button>
+                        <p id="form-status" style="margin-left: 0;"></p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 - Julian SEILLER <br>Dernière MàJ : <span id="last-updated"></span></p>
+            <div class="footer-actions">
+                <a href="assets/files/CV_Julian_SEILLER.pdf" class="btn-cv" title="Télécharger mon CV"
+                    target="_blank">Télécharger mon CV PDF</a>
+                <a href="#hello" class="back-to-top">Retour en haut</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/javascript/skillCards.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/projets.js"></script>
+</body>
+
+</html>

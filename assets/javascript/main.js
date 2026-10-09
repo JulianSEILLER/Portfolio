@@ -90,7 +90,7 @@ function updateHello() {
     const isEnglishPage = window.location.pathname.includes('indexEN.html');
     
     if (isEnglishPage) {
-        greetingElement.textContent = "Hey !";
+        greetingElement.textContent = "Hey!";
     } else {
         if (hours >= 18 || hours < 6) {
             greetingElement.textContent = 'Bonsoir\u00A0!';

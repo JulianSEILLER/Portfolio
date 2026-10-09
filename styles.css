@@ -422,6 +422,108 @@ div#home div#homeText p {
     transition: font-size 0.3s ease;
 }
 
+/* ---------- HOME : accroche recruteur ---------- */
+div#home div#homeText p.home-role {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+
+div#home div#homeText p.home-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin: 18px 0 0 0;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background-color: #2C2C34;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #d6ddd8;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.6);
+    animation: statusPulse 2s infinite;
+    flex-shrink: 0;
+}
+
+@keyframes statusPulse {
+    0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(76, 175, 80, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    color: #ebf5ee;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-hero:hover,
+.btn-hero:focus-visible {
+    border-color: #ff6404;
+    box-shadow: 0 0 10px rgba(255, 100, 4, 0.35);
+}
+
+.btn-hero-primary {
+    background: linear-gradient(to bottom right, #EF4765, #ff6404);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+h3.sub-section {
+    margin-top: 40px;
+}
+
+.sectionContent li a {
+    color: #ff8533;
+}
+
+@media screen and (max-width: 650px) {
+    div#home div#homeText p.home-role {
+        font-size: 1.25rem;
+    }
+
+    div#home div#homeText p.home-status {
+        font-size: 0.95rem;
+        border-radius: 14px;
+        text-align: left;
+    }
+
+    .home-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-hero {
+        text-align: center;
+    }
+}
+
 /* ---------- SECTIONS ---------- */
 section {
     display: flex;
@@ -559,7 +661,7 @@ section {
     font-size: 1.15em;
     font-weight: 450;
     margin: 0 0 5px 0;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .iconOnLeft div.text p {
@@ -682,11 +784,10 @@ section {
     font-weight: 500;
     color: #EBF5EE;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
     overflow: visible;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
     padding: 0 10px;
     box-sizing: border-box;
 }

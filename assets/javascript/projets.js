@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
             date: "2026-05-31",
             closedDescription: "Application web locale automatisant le scraping et le téléchargement de données sécurisées.",
             closedDescriptionEN: "Local web application automating scraping and downloading of secure data.",
-            openDescription: "Projet personnel open-source.<br>Développé avec Python (Flask) et Selenium. L'application permet d'analyser, d'extraire et de télécharger rapidement sous forme d'archive ZIP toutes les ressources contenues dans un mur collaboratif Digipad. Intègre du multi-threading pour la vitesse, la gestion des mots de passe, et la vérification des liens morts.",
-            openDescriptionEN: "Open-source personal project.<br>Developed with Python (Flask) and Selenium. The application allows analyzing, extracting, and quickly downloading as a ZIP archive all resources contained in a Digipad collaborative wall. Includes multi-threading for speed, password management, and dead link checking.",
+            openDescription: "Projet personnel (code source sur GitHub).<br>Développé avec Python (Flask) et Selenium. L'application permet d'analyser, d'extraire et de télécharger rapidement sous forme d'archive ZIP toutes les ressources contenues dans un mur collaboratif Digipad. Intègre du multi-threading pour la vitesse, la gestion des mots de passe, et la vérification des liens morts.",
+            openDescriptionEN: "Personal project (source code on GitHub).<br>Developed with Python (Flask) and Selenium. The application allows analyzing, extracting, and quickly downloading as a ZIP archive all resources contained in a Digipad collaborative wall. Includes multi-threading for speed, password management, and dead link checking.",
             footerText: "Stack : Python (Flask), Selenium, Multi-threading, TailwindCSS",
             footerTextEN: "Stack: Python (Flask), Selenium, Multi-threading, TailwindCSS",
             icon: "/assets/icons/python.png",
@@ -258,8 +258,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${openDescription}</p>
                 </div>
                 ${badgesHTML}
-                ${item.hasGitRepo ? `<a href="${item.gitRepoLink}" class="btn" target="_blank">${isEnglish ? 'See the project ➔' : 'Voir le projet ➔'}</a>` : ''}
-                ${item.hasFile ? `<a href="${isGithubPages ? `/portfolio${item.fileLink}` : item.fileLink}" class="btn" target="_blank">${isEnglish ? 'See the file ➔' : 'Voir le fichier ➔'}</a>` : ''}
+                ${item.hasGitRepo ? `<a href="${item.gitRepoLink}" class="btn" target="_blank" rel="noopener noreferrer">${isEnglish ? 'See the project ➔' : 'Voir le projet ➔'}</a>` : ''}
+                ${item.hasFile ? `<a href="${isGithubPages ? `/portfolio${item.fileLink}` : item.fileLink}" class="btn" target="_blank" rel="noopener noreferrer">${isEnglish ? 'See the file ➔' : 'Voir le fichier ➔'}</a>` : ''}
                 </div>
             `;
 

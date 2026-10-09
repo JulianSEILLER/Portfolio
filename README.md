@@ -11,6 +11,8 @@ Bienvenue sur le dépôt de mon portfolio personnel ! Ce site présente mon parc
 - 📂 **Présentation Dynamique des Projets** : Filtrage visuel par catégories (Projets Principaux, Stages, BTS, BUT) avec des cartes interactives.
 - ✉️ **Formulaire de Contact** : Intégration avec EmailJS pour l'envoi de messages directement depuis le site.
 - 📄 **Téléchargement de CV** : Bouton intégré pour récupérer facilement mon CV au format PDF.
+- 🗓️ **Calendrier d'alternance** : Le calendrier CESI 2026-2027 est téléchargeable depuis l'accueil et la présentation.
+- 🔗 **Partage optimisé** : Balises Open Graph avec une image de partage dédiée (`assets/images/og-image.png`).
 
 ## 🛠️ Stack Technique
 
@@ -30,6 +32,16 @@ Aucune installation complexe n'est requise. Pour lancer le projet en local :
    ```
 2. Ouvrez le dossier dans votre IDE préféré (ex: VSCode).
 3. Lancez le fichier `index.html` dans votre navigateur (ou utilisez l'extension *Live Server* sur VSCode pour un rechargement automatique).
+   > Les icônes des projets utilisent des chemins absolus (`/assets/...`) : pour les voir, servez le dossier avec un petit serveur local, par exemple `python3 -m http.server 8000`, puis ouvrez http://localhost:8000.
+
+## 🗂️ Structure
+
+- `index.html` / `indexEN.html` : versions française et anglaise (à garder synchronisées à la main).
+- `styles.css` : tout le style du site.
+- `assets/javascript/projets.js` : liste des projets (titres, descriptions FR/EN, stack, liens).
+- `assets/javascript/skillCards.js` : cartes de compétences.
+- `assets/javascript/main.js` : animations, menu, formulaire de contact (EmailJS).
+- `assets/files/` : CV et calendrier d'alternance en PDF.
 
 ## 📬 Contact
 

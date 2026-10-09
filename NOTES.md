@@ -3,7 +3,7 @@
 ## Octobre 2026 : mise à jour suite à la revue
 
 ### Ce qui a été fait
-- Accueil : métier (« Développeur Java & Full-stack »), badge de disponibilité et trois boutons (projets, CV, calendrier).
+- Accueil : métier (« Développeur Java & Full-stack »), badge de disponibilité et deux boutons (projets, calendrier ; le CV est déjà dans l’en-tête et le pied de page).
 - Présentation : Bachelor CDA au CESI Grenoble **en cours**, disponibilité immédiate, rythme d'alternance.
 - Calendrier CESI 2026-2027 ajouté dans `assets/files/Calendrier_Alternance_CESI_2026-2027.pdf`.
 - Section Projets remontée juste après la Présentation ; projets de stage affichés avant les projets BTS.

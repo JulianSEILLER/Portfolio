@@ -1,5 +1,6 @@
 /* --------- ScrollReveal --------- */
-const sr = ScrollReveal();
+// Si la librairie ne se charge pas (CDN bloqué), le reste du site doit continuer à fonctionner
+const sr = typeof ScrollReveal === 'function' ? ScrollReveal() : { reveal: () => {} };
 
 // ---------- Without delay
 sr.reveal('.revealL', {
@@ -92,9 +93,9 @@ function updateHello() {
         greetingElement.textContent = "Hey !";
     } else {
         if (hours >= 18 || hours < 6) {
-            greetingElement.textContent = 'Bonsoir !';
+            greetingElement.textContent = 'Bonsoir\u00A0!';
         } else {
-            greetingElement.textContent = 'Bonjour !';
+            greetingElement.textContent = 'Bonjour\u00A0!';
         }
     }
 }
@@ -158,9 +159,10 @@ window.addEventListener('popstate', () => {
 
 /* --------- Formulaire de contact (EmailJS) --------- */
 document.addEventListener('DOMContentLoaded', () => {
-    emailjs.init('dfx9Z4lE29zQq_uif');
-
     const form = document.getElementById('contact-form');
+    if (!form || typeof emailjs === 'undefined') return;
+
+    emailjs.init('dfx9Z4lE29zQq_uif');
     const statusEl = document.getElementById('form-status');
     const isEnglishPage = window.location.pathname.includes('indexEN.html');
 

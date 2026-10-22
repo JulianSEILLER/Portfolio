@@ -668,6 +668,15 @@ section {
     font-size: 1em;
     margin: 0px;
     color: #C0C0C0;
+    text-align: center;
+}
+
+/* En dessous de 1500px, 4 cartes par ligne obligent les textes à passer sur deux lignes */
+@media screen and (max-width: 1500px) {
+    .iconOnLeft {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 10px);
+    }
 }
 
 /* ---------- EXPÉRIENCES PROFESSIONNELLES ---------- */
@@ -908,8 +917,19 @@ section {
     height: 0 !important;
 }
 
+/* Titres sur deux lignes réservées : les dates et descriptions restent alignées d'une carte à l'autre */
+@media screen and (min-width: 891px) {
+    .exp-header h4 {
+        min-height: 2.5em;
+        line-height: 1.25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* Responsive pour les expériences */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) {
     .exp-card {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 10px);
@@ -1153,7 +1173,7 @@ section {
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     transition: filter 0.3s ease, height 0.3s ease;
@@ -1952,6 +1972,8 @@ section {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .iconOnLeft img {
@@ -2028,6 +2050,7 @@ section {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: flex-start;
             align-content: space-between;
             width: 100%;
             margin-bottom: 0px;

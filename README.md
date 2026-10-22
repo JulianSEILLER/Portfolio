@@ -2,7 +2,7 @@
 
 Bienvenue sur le dépôt de mon portfolio personnel ! Ce site présente mon parcours, mes compétences ainsi que les différents projets sur lesquels j'ai travaillé, qu'ils soient personnels, scolaires (BTS SIO / BUT Informatique) ou professionnels.
 
-🌍 **Lien du site en direct :** [https://portfolio-julianseiller.vercel.app/](https://portfolio-julianseiller.vercel.app/)
+🌍 **Lien du site en direct :** [https://julianseiller.vercel.app/](https://julianseiller.vercel.app/)
 
 ## ✨ Fonctionnalités
 

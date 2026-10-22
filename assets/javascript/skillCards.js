@@ -15,20 +15,20 @@ const allSkills = [
     { link: 'https://www.python.org/', imgSrc: 'assets/icons/python.png', title: 'Python', category: 'backend' },
     { link: 'https://www.php.net/', imgSrc: 'assets/icons/php.png', title: 'PHP', category: 'backend' },
     { link: 'https://docs.microsoft.com/en-us/powershell/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg', title: 'PowerShell/Bash', category: 'backend' },
-    
+
     // Front-end
     { link: 'https://reactjs.org/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg', title: 'React', category: 'frontend' },
     { link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', imgSrc: 'assets/icons/js.png', title: 'JavaScript', category: 'frontend' },
     { link: 'https://getbootstrap.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg', title: 'Bootstrap', category: 'frontend' },
     { link: 'https://developer.mozilla.org/en-US/docs/Web/CSS', imgSrc: 'assets/icons/css3.png', title: 'CSS3', category: 'frontend' },
     { link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', imgSrc: 'assets/icons/html5.png', title: 'HTML5', category: 'frontend' },
-    
+
     // Conception & Méthodes
     { link: 'https://www.visual-paradigm.com/', imgSrc: 'assets/icons/visualparadigm.png', title: 'Visual Paradigm', category: 'conception' },
-    { link: 'https://jestjs.io/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg', title: 'Tests unitaires', titleEN: 'Unit Testing', category: 'conception' },
-    { link: 'https://fr.wikipedia.org/wiki/M%C3%A9thode_agile', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg', title: 'Méthode agile', titleEN: 'Agile Methodology', category: 'conception' },
+    { link: 'https://jestjs.io/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg', title: 'Tests Unitaires', titleEN: 'Unit Testing', category: 'conception' },
+    { link: 'https://fr.wikipedia.org/wiki/M%C3%A9thode_agile', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg', title: 'Méthode Agile', titleEN: 'Agile Methodology', category: 'conception' },
     { link: 'https://www.figma.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', title: 'Figma', category: 'conception' },
-    
+
     // Outils & DevOps
     { link: 'https://git-scm.com/', imgSrc: 'assets/icons/git.png', title: 'Git', category: 'tools' },
     { link: 'https://about.gitlab.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg', title: 'GitLab', category: 'tools' },
@@ -36,8 +36,8 @@ const allSkills = [
     { link: 'https://www.jetbrains.com/idea/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg', title: 'IntelliJ', category: 'tools' },
     { link: 'https://code.visualstudio.com/', imgSrc: 'assets/icons/vscode.png', title: 'VS Code', category: 'tools' },
     { link: 'https://ubuntu.com/', imgSrc: 'assets/icons/ubuntu.png', title: 'Linux (Ubuntu)', category: 'tools' },
-    { link: 'https://ollama.com/', imgSrc: 'assets/icons/ollama.png', title: 'IA (Ollama, LLM)', titleEN: 'AI (Ollama, LLMs)', category: 'tools' },
-    
+    { link: 'https://ollama.com/', imgSrc: 'assets/icons/ollama.png', title: 'IA (Ollama, LLM)', titleEN: 'AI (Ollama, LLM)', category: 'tools' },
+
     // Bases de Données
     { link: 'https://www.postgresql.org/', imgSrc: 'assets/icons/postgres.png', title: 'PostgreSQL', category: 'database' },
     { link: 'https://sqlite.org/', imgSrc: 'assets/icons/sqlite.png', title: 'SQLite', category: 'database' },
@@ -48,14 +48,14 @@ const allSkills = [
 // Fonction pour générer les cartes dynamiquement
 function generateSkillCards() {
     const container = document.querySelector('.skillCardsContainer');
-    container.innerHTML = ''; 
+    container.innerHTML = '';
 
     // Vérifier si la page est "indexEN.html"
     const isEnglishPage = window.location.pathname.includes('indexEN.html');
 
     categories.forEach(cat => {
         const categorySkills = allSkills.filter(skill => skill.category === cat.id);
-        
+
         // Ne générer la catégorie que si elle contient des éléments
         if (categorySkills.length > 0) {
 

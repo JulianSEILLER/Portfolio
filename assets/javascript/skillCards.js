@@ -9,12 +9,12 @@ const categories = [
 const allSkills = [
     // Back-end & API
     { link: 'https://www.java.com/', imgSrc: 'assets/icons/java.png', title: 'Java', category: 'backend' },
-    { link: 'https://expressjs.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg', title: 'Express.JS', category: 'backend' },
-    { link: 'https://nodejs.org/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg', title: 'Node.JS', category: 'backend' },
-    { link: 'https://restfulapi.net/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg', title: 'API REST', category: 'backend' },
+    { link: 'https://expressjs.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg', title: 'Express.js', category: 'backend' },
+    { link: 'https://nodejs.org/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg', title: 'Node.js', category: 'backend' },
+    { link: 'https://restfulapi.net/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg', title: 'API REST', titleEN: 'REST API', category: 'backend' },
     { link: 'https://www.python.org/', imgSrc: 'assets/icons/python.png', title: 'Python', category: 'backend' },
     { link: 'https://www.php.net/', imgSrc: 'assets/icons/php.png', title: 'PHP', category: 'backend' },
-    { link: 'https://docs.microsoft.com/en-us/powershell/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg', title: 'Powershell/Bash', category: 'backend' },
+    { link: 'https://docs.microsoft.com/en-us/powershell/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg', title: 'PowerShell/Bash', category: 'backend' },
     
     // Front-end
     { link: 'https://reactjs.org/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg', title: 'React', category: 'frontend' },
@@ -25,8 +25,8 @@ const allSkills = [
     
     // Conception & Méthodes
     { link: 'https://www.visual-paradigm.com/', imgSrc: 'assets/icons/visualparadigm.png', title: 'Visual Paradigm', category: 'conception' },
-    { link: 'https://jestjs.io/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg', title: 'Tests Unitaires', category: 'conception' },
-    { link: 'https://fr.wikipedia.org/wiki/M%C3%A9thode_agile', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg', title: 'Méthode Agile', category: 'conception' },
+    { link: 'https://jestjs.io/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg', title: 'Tests unitaires', titleEN: 'Unit Testing', category: 'conception' },
+    { link: 'https://fr.wikipedia.org/wiki/M%C3%A9thode_agile', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg', title: 'Méthode agile', titleEN: 'Agile Methodology', category: 'conception' },
     { link: 'https://www.figma.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', title: 'Figma', category: 'conception' },
     
     // Outils & DevOps
@@ -34,9 +34,9 @@ const allSkills = [
     { link: 'https://about.gitlab.com/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg', title: 'GitLab', category: 'tools' },
     { link: 'https://docker.com/', imgSrc: 'assets/icons/docker.png', title: 'Docker', category: 'tools' },
     { link: 'https://www.jetbrains.com/idea/', imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg', title: 'IntelliJ', category: 'tools' },
-    { link: 'https://code.visualstudio.com/', imgSrc: 'assets/icons/vscode.png', title: 'VSCode', category: 'tools' },
+    { link: 'https://code.visualstudio.com/', imgSrc: 'assets/icons/vscode.png', title: 'VS Code', category: 'tools' },
     { link: 'https://ubuntu.com/', imgSrc: 'assets/icons/ubuntu.png', title: 'Linux (Ubuntu)', category: 'tools' },
-    { link: 'https://ollama.com/', imgSrc: 'assets/icons/ollama.png', title: 'IA (Ollama, LLMs)', category: 'tools' },
+    { link: 'https://ollama.com/', imgSrc: 'assets/icons/ollama.png', title: 'IA (Ollama, LLM)', titleEN: 'AI (Ollama, LLMs)', category: 'tools' },
     
     // Bases de Données
     { link: 'https://www.postgresql.org/', imgSrc: 'assets/icons/postgres.png', title: 'PostgreSQL', category: 'database' },
@@ -79,10 +79,11 @@ function generateSkillCards() {
 
                 const img = document.createElement('img');
                 img.src = skill.imgSrc;
-                img.alt = skill.title;
+                const title = isEnglishPage && skill.titleEN ? skill.titleEN : skill.title;
+                img.alt = title;
 
                 const h4 = document.createElement('h4');
-                h4.textContent = skill.title;
+                h4.textContent = title;
 
                 card.appendChild(img);
                 card.appendChild(h4);
